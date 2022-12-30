@@ -1,0 +1,133 @@
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/cta.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+    <link rel="stylesheet" href="assets/css/service.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+  </head>
+
+<body>
+  <!-- Canvas -->
+  <canvas class="orb-canvas"></canvas>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Pre-Header Area Start ***** -->
+  <div class="pre-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-9">
+          <div class="left-info">
+            <ul>
+              <li><a href="https://wa.me/+918383862320" target="_blank"><i class="fa fa-phone"></i>+91 83838 62320</a></li>
+              <li><a href="mailto:contact@digitalmediahawk.com"><i class="fa fa-envelope"></i>contact@digitalmediahawk.com</a></li>
+              <!-- <li><a href="#"><i class="fa fa-map-marker"></i>Near Khatu Shayam Mandir </a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-3">
+          <div class="social-icons">
+            <ul>
+              <li><a href="https://www.facebook.com/dmediahawk" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/DMediaHawk" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/14585025/admin/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/dmediahawk/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Pre-Header Area End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header id="nav" class="header-area header-area2 header-sticky">  
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="/" class="logo">
+                        <img src="assets/images/logo1.png" alt="" style="max-width: 152px;">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="/">Home</a></li>
+                      <li class="scroll-to-section"><a href="/about-us">About Us</a></li>
+                      <li class="scroll-to-section"><a href="/services">Our Services</a></li>
+                      <!-- <li class="scroll-to-section"><a href="https://blog.digitalmediahawk.com/" target="_blank">Blogs</a></li> -->
+                      <!-- <li class="scroll-to-section"><a href="/faqs.html">FAQ's</a></li> -->
+                      <li class="scroll-to-section"><a href="contact-us">Contact Us</a></li>
+                      <!-- <li class="has-sub">
+                          <a href="javascript:void(0)">Pages</a>
+                          <ul class="sub-menu">
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="faqs.html">FAQs</a></li>
+                          </ul>
+                      </li>
+                      <li class="scroll-to-section"><a href="#infos">Infos</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Contact</a></li> -->
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+      
+      <button style="display: none;" type="button" id="modal-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Flash Messages -->
+              <div class="container">
+                <% if(error && error.length> 0){ %>
+                <div class="alert alert-danger" role="alert"><%=error%></div>
+                <% } %> <% if(success && success.length> 0){ %>
+                <div class="alert alert-success" role="alert"><%=success%></div>
+                <% } %>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="main-button main-whatsapp scroll-to-section"><a href="https://wa.me/+918383862320" target="_blank"><i class="fab fa-whatsapp"></i>  Whatsapp</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <button class="overlay__btn overlay__btn--colors float">
+    <!-- <span>Randomise Colors</span> -->
+    <span class="overlay__btn-emoji my-float">🎨</span>
+  </button>
