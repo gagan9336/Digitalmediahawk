@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800");
+@import "service.css";
+@import "animate.css";
+@import "aos.css";
+@import "flex-slider.css";
+@import "fontawesome.css";
+@import "google-fonts.css";
+@import "owl.css";
+@import "swiper.css";
+@import "timeline.css";
+@import "bootstrap.min.css";
 /* 
 ---------------------------------------------
 reset
@@ -80,7 +89,6 @@ ul {
 p {
   font-size: 20px;
   line-height: 30px;
-  /* color: #afafaf; */
   color: black;
 }
 
@@ -973,7 +981,7 @@ canvas {
 }
 
 .about-image:after {
-  content: url(../images/about-us-new.png);
+  content: url(../images/about-us-new.webp);
   top: 175px;
   right: 0;
   position: absolute;
@@ -985,7 +993,7 @@ canvas {
 
 
 .contact-image:after {
-  content: url(../images/contact1new.png);
+  content: url(../images/contact1new.webp);
   top: 175px;
   right: 0;
   position: absolute;
@@ -1115,7 +1123,7 @@ Services Style
 }
 
 .services::before {
-  content: url(../images/service-home1.png);
+  content: url(../images/service-home1.webp);
   top: 120px;
   left: 0;
   position: absolute;
@@ -1195,10 +1203,17 @@ Projects Style
   overflow: hidden;
 }
 
+.border-gradient {
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #5b03e4, #c03afe) border-box;
+  border-radius: 23px;
+  border: 3px solid transparent;
+}
+
+
 .projects .item .down-content {
   background-color: #fff;
-  border: 1px solid #f3d7ff;
-  border-radius: 0px 0px 23px 23px;
+  border-top: 3px solid #c03afe;
   padding: 30px;
   position: relative;
 }
@@ -1264,7 +1279,7 @@ Infos Style
 */
 
 .infos {
-  background-image: url(../images/infos-bg.jpg);
+  background-image: url(../images/infos-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1279,7 +1294,7 @@ Infos Style
 }
 
 .infos .main-content .left-image {
-  background-image: url(../images/secret-of-marketing.jpg);
+  background-image: url(../images/secret-of-marketing.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1378,18 +1393,6 @@ Contact Style
   height: 464px;
   z-index: -1;
 }
-
-/* .contact-us::after {
-  content: url(../images/contact-left.jpg);
-  bottom: -90px;
-  right: 0;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  position: absolute;
-  width: 103px;
-  height: 464px;
-  z-index: -1;
-} */
 
 .contact-us .contact-us-content {
   border-radius: 23px;
@@ -1550,7 +1553,7 @@ Page Heading Style
 }
 
 .page-heading::before {
-  content: url(../images/banner-left.png);
+  content: url(../images/banner-left.webp);
   top: -1px;
   left: 0;
   position: absolute;
@@ -1616,7 +1619,7 @@ Infos Style
 */
 
 .video-info {
-  background-image: url(../images/video-bg.jpg);
+  background-image: url(../images/video-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1743,18 +1746,6 @@ Happy Clients Style
   z-index: -1;
 }
 
-/* .happy-clients::after {
-  content: url(../images/contact-left.jpg);
-  bottom: -90px;
-  right: 0;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  position: absolute;
-  width: 103px;
-  height: 464px;
-  z-index: -1;
-} */
-
 .happy-clients .section-heading {
   text-align: center;
   margin-bottom: 80px;
@@ -1867,7 +1858,7 @@ CTA Style
 */
 
 .cta {
-  background-image: url(../images/cta-bg.jpg);
+  background-image: url(../images/cta-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1900,7 +1891,7 @@ Happy Steps Style
 */
 
 .happy-steps {
-  background-image: url(../images/video-bg.jpg);
+  background-image: url(../images/video-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1957,18 +1948,6 @@ Most Asked Style
   z-index: -1;
 }
 
-/* .most-asked::after {
-  content: url(../images/contact-left.jpg);
-  bottom: -90px;
-  right: 0;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  position: absolute;
-  width: 103px;
-  height: 464px;
-  z-index: -1;
-} */
-
 .most-asked .section-heading {
   margin-bottom: 80px;
 }
@@ -1994,7 +1973,6 @@ Most Asked Style
 @media screen and (min-width: 768px) {
   .most-asked .accordion-head {
     padding: 1rem;
-    /* font-size: 1.2rem; */
   }
 }
 
@@ -2082,7 +2060,6 @@ body {
 .header-area .main-nav ul li a:hover {
   transform: scale(1.2) ;
   transition-duration: 200ms;
-  /* box-shadow: 0 0 4px 0 rgba(33, 33, 33, 0.2); */
 }
 
 @media (max-width: 380px) {
@@ -2099,9 +2076,6 @@ body {
   .header-area {
     top: 0px;
   }
-  .main-banner {
-    /* margin-top: 100px; */
-  }
   .header-area .main-nav .nav li:nth-child(4) {
     padding-right: 0px !important;
   }
@@ -2110,9 +2084,6 @@ body {
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
-  }
-  .main-banner  {
-    /* padding: 100px 0px; */
   }
   .main-banner h4 {
     font-size: 36px;
@@ -2245,8 +2216,6 @@ body {
 
 @media (max-width: 1400px) {
   .main-banner .caption {
-    /* background-color: rgba(250, 250, 250, 0.95); */
-    /* padding: 60px; */
     border-radius: 23px;
   }
 }

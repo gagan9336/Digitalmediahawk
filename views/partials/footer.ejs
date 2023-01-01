@@ -38,7 +38,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
    $( document ).ready(function() {
     var success = "<%= success %>";
@@ -47,32 +46,21 @@
     if(error || success){
       $('#modal-button').click();
       console.log("check");
-      //create one
-    //button and give id as btn-modal-open so that on 
-    //click of button modal should popup
       }
     });
  </script>
+  <script src="assets/js/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <script src="assets/js/particle.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-<script>new WOW().init();</script>
   <script src="assets/js/timeline.js"></script>
-  <script type="module" src="assets/js/cta.js"></script>
   <script src="assets/js/custom-particle.js"></script>
   <script src="assets/js/anime.js"></script>
   <script src="assets/js/custom-anime.js"></script>
-  <!-- <script src="assets/js/isotope.min.js"></script> -->
   <script src="assets/js/isotope.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
-
-
   </body>
-
 </html>

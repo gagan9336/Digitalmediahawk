@@ -3,20 +3,10 @@ var express = require("express"),
    bodyParser = require("body-parser"),
    methodOverride = require("method-override"),
    aos = require("aos"),
-   livereload = require("livereload"),
    nodemailer = require("nodemailer"),
-   flash = require("connect-flash"),
-   connectLiveReload = require("connect-livereload");
+   flash = require("connect-flash");
 
 require('dotenv').config();
-
-// reload browser on change
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once("connection", () => {
-   setTimeout(() => {
-      liveReloadServer.refresh("/");
-   }, 100);
-});
 
 // Setting Port
 const PORT = process.env.PORT || 3000;
@@ -36,7 +26,6 @@ app.use(express.urlencoded({
 }));
 app.use(express.static(__dirname + "/public/"));
 app.use(methodOverride("_method"));
-app.use(connectLiveReload());
 //adding current user info
 app.use((req,res,next)=>{
    res.locals.currentUser=req.user;

@@ -1,43 +1,6 @@
- @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
- blockquote{
-   font-size: 1.4em;
-   /* width:60%; */
-   margin:20px auto;
-   font-family: "Open Sans";
-   font-style:italic;
-   color: #555555;
-   padding:1.2em 30px 1.2em 75px;
-   border-left:8px solid #5b03e4 ;
-   line-height:1.6;
-   position: relative;
-   background:#EDEDED;
- }
- 
- blockquote::before{
-   font-family:Arial;
-   content: "\201C";
-   color:#c03afe;
-   font-size:4em;
-   position: absolute;
-   left: 10px;
-   top:-10px;
- }
- 
- blockquote::after{
-   content: '';
- }
- 
- blockquote span{
-   display:block;
-   color:#333333;
-   font-style: normal;
-   font-weight: bold;
-   margin-top:1em;
- }
- 
+
 .icon-animate {
   width: 50px;
-  animation: rotation 2s linear infinite;
 }
 @keyframes rotation {
     from {
@@ -148,21 +111,13 @@ width: calc(50% + 80px);
 height: calc(100% + 160px);
 top: -80px;
 left: -3px;
-/* background: transparent; */
 z-index: 0;
 background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
-/* border: 44px solid ; */
 }
 
 .about-section .image-column .image-1{
 position: relative;
 }
-
-/* .content-column {
-    border-radius: 46px;
-    box-shadow: 0 30px 50px rgba(8,13,62,.15);
-    background-color: #ffffff;
-} */
 
 .about-section .image-column .image-1 img{
 box-shadow: 0 30px 50px rgba(8,13,62,.15);
