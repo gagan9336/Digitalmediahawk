@@ -41,10 +41,10 @@ app.get("/", (req, res) => {
 
 app.post("/contact-us", (req, res) => {
    var smtpTransport = nodemailer.createTransport({
-      host: "smtp.hostinger.com",
-      port: 465,
-      secure: true,
-      // service: 'gmail',
+      // host: "smtp.hostinger.com",
+      // port: 465,
+      // secure: true,
+      service: 'gmail',
       auth: {
          user: process.env.email1,
          pass: process.env.pass1
@@ -59,10 +59,10 @@ app.post("/contact-us", (req, res) => {
    smtpTransport.sendMail(mailOptions, function (err) {
       if (err) {
          console.log(err);
-         req.flash("error", "It's not you, it's us. Some error had occur. Please try later. If you want contact us now, Click below button.")
+         req.flash("error", "It's not you, it's us. Some error had occur. Please try later. If you want to contact us now, Click below button.")
          res.redirect("/");
       } else {
-         req.flash("success", "Your form is submitted. Our experts will contact you soon. If you want contact us now, Click below button.")
+         req.flash("success", "Your form is submitted. Our experts will contact you soon. If you want to contact us now, Click below button.")
          res.redirect("/");
       }
    });
@@ -101,6 +101,16 @@ app.get("/t&c", (req, res) => {
 // getting Contact-Us page
 app.get("/contact-us", (req, res) => {
    res.render("contact");
+})
+
+// getting sitemap page
+app.get("/sitemap.xml", (req, res) => {
+   res.sendFile("sitemap.xml", { root: '.' });
+})
+
+// getting robots.txt page
+app.get("/robots.txt", (req, res) => {
+   res.sendFile("robots.txt", { root: '.' });
 })
 
 // for error page
