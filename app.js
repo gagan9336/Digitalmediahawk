@@ -115,7 +115,7 @@ app.get("/robots.txt", (req, res) => {
 
 // for error page
 app.get("*", (req, res) => {
-   res.send("error Page");
+   res.render("error");
 })
 
 // Starting Port
