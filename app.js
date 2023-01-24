@@ -61,6 +61,10 @@ app.post("/contact-us", (req, res) => {
          accessToken: process.env.accessToken
       }
    });
+   console.log(process.env.CLIENT_ID);
+   console.log(process.env.CLIENT_SECRET);
+   console.log(process.env.REFRESH_TOKEN);
+   console.log(process.env.accessToken);
    var mailOptions = {
       to: process.env.email1,
       from: process.env.email1,
