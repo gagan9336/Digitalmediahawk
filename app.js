@@ -1,5 +1,6 @@
 var express = require("express"),
    app = express(),
+   {google} = require("googleapis");
    bodyParser = require("body-parser"),
    methodOverride = require("method-override"),
    aos = require("aos"),
@@ -7,6 +8,10 @@ var express = require("express"),
    flash = require("connect-flash");
 
 require('dotenv').config();
+
+const oAuth2Client = new google.auth.OAuth2(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.REDIRECT_URI)
+oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
+
 
 // Setting Port
 const PORT = process.env.PORT || 3000;
@@ -40,14 +45,20 @@ app.get("/", (req, res) => {
 })
 
 app.post("/contact-us", (req, res) => {
+   const accessToken = oAuth2Client.getAccessToken();
    var smtpTransport = nodemailer.createTransport({
       // host: "smtp.hostinger.com",
       // port: 465,
       // secure: true,
       service: 'gmail',  
       auth: {
+         type: 'OAuth2',
          user: process.env.email2,
-         pass: process.env.pass2
+         // pass: process.env.pass2,
+         clientId : process.env.CLIENT_ID,
+         clientSecret: process.env.CLIENT_SECRET,
+         refreshToken: process.env.REFRESH_TOKEN,
+         accessToken: process.env.accessToken
       }
    });
    var mailOptions = {
