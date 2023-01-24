@@ -44,10 +44,10 @@ app.post("/contact-us", (req, res) => {
       // host: "smtp.hostinger.com",
       // port: 465,
       // secure: true,
-      service: 'gmail',
+      service: 'gmail',  
       auth: {
-         user: process.env.email1,
-         pass: process.env.pass1
+         user: process.env.email2,
+         pass: process.env.pass2
       }
    });
    var mailOptions = {

@@ -1779,12 +1779,43 @@ Happy Clients Style
   cursor: pointer;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.happy-clients .naccs1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.happy-clients .naccs1 .menu {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  padding: 25px 0px;
+  border-radius: 23px;
+  margin-bottom: 60px;
+}
+
+.happy-clients .naccs1 .menu div {
+  border-right: 1px solid #e0e0e0;
+  width: 24.6%;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a2a2a;
+  cursor: pointer;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
 .happy-clients .naccs .menu div.last-item {
   border-right: none;
 }
 
 .happy-clients .naccs .menu div.active {
+  color: #5b03e4;
+}
+.happy-clients .naccs1 .menu div.last-item {
+  border-right: none;
+}
+
+.happy-clients .naccs1 .menu div.active {
   color: #5b03e4;
 }
 
@@ -2172,6 +2203,13 @@ body {
   .happy-clients .naccs .menu {
     padding: 15px;
   }
+  .happy-clients .naccs1 .menu div {
+    width: 100% !important;
+    margin: 15px 0px;
+  }
+  .happy-clients .naccs1 .menu {
+    padding: 15px;
+  }
   .happy-clients ul.nacc li img {
     padding-left: 0px;
     margin-top: 45px;
@@ -2201,6 +2239,11 @@ body {
 
 @media (max-width: 1000px) {
   .happy-clients .naccs .menu div {
+    width: 24.5%;
+    font-size: 15px;
+    border-right: none;
+  }
+  .happy-clients .naccs1 .menu div {
     width: 24.5%;
     font-size: 15px;
     border-right: none;
