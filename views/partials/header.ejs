@@ -66,6 +66,7 @@
                       <li class="scroll-to-section"><a href="/about-us">About Us</a></li>
                       <li class="scroll-to-section"><a href="/services">Our Services</a></li>
                       <li class="scroll-to-section"><a href="contact-us">Contact Us</a></li>
+                      <li class="scroll-to-section"><a href="#search" data-bs-toggle="modal" data-bs-target="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -76,6 +77,38 @@
         </div>
     </div>
   </header>
+  <div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="">
+            <div class="row d-flex justify-content-center ">  
+              <div class="col-md-12">  
+                  <div class="card">                    
+                    <div class="input-box">
+                      <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Search...">
+                      <i class="fa fa-search"></i>                    
+                    </div>  
+                    <div class="list border-bottom">  
+                      <ul id="myUL">
+                        <li><a href="/about-us">About Us</a></li>
+                        <li><a href="/services">Services</a></li>
+          
+                        <li><a href="#projects">Our Clients</a></li>
+                        <li><a href="#timeline">Our Journey</a></li>
+          
+                        <li><a href="/contact-us">Contact Us</a></li>
+                        <li><a href="/faqs">Faq's</a></li>
+                      </ul>                
+                    </div>
+                  </div>
+                </div>              
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>
+  </div>
       
       <button style="display: none;" type="button" id="modal-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
