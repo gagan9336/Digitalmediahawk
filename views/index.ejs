@@ -168,34 +168,15 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-features owl-carousel">
+            <% portfolio.forEach(function(portfolio, i) { %>
             <div class="item border-gradient">
-              <img src="assets/images/logo-d-2.png" alt="">
+              <img src="<%=portfolioImage[i]%>" alt="">
               <div class="down-content">
-                <h4>Riwaaz Weddings</h4>
-                <a href="https://riwaazweddings.com" target="_blank"><i class="fa fa-link"></i></a>
+                <h4><%=portfolio%></h4>
+                <a href="<%=portfolioLink[i]%>" target="_blank"><i class="fa fa-link"></i></a>
               </div>
             </div>
-            <div class="item border-gradient">
-              <img src="assets/images/logo-d-1.png" alt="">
-              <div class="down-content">
-                <h4>Shiv Mandir Rotak</h4>
-                <a href="#"><i class="fa fa-link" target="_blank"></i></a>
-              </div>
-            </div>
-            <div class="item border-gradient">
-              <img src="assets/images/logo-d-3.png" alt="">
-              <div class="down-content">
-                <h4>NuBooks</h4>
-                <a href="https://nubooks.io" target="_blank"><i class="fa fa-link"></i></a>
-              </div>
-            </div>
-            <div class="item border-gradient">
-              <img src="assets/images/logo-d-4.png" alt="">
-              <div class="down-content">
-                <h4>M3M</h4>
-                <a href="https://m3mcommercial.co" target="_blank"><i class="fa fa-link"></i></a>
-              </div>
-            </div>
+            <% }) %>
           </div>
         </div>
       </div>

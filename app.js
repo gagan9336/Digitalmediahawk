@@ -37,11 +37,41 @@ app.use((req,res,next)=>{
    res.locals.success = req.flash("success");
    res.locals.error= req.flash("error");
    next();
-})
+});
+
+var portfolioImage = [
+   "assets/images/logo-d-2.png",
+   "assets/images/logo-d-1.png",
+   "assets/images/logo-d-3.png",
+   "assets/images/logo-d-4.png",
+   "assets/images/logo-d-5.png",
+   "assets/images/logo-d-6.png",
+   "assets/images/logo-d-7.png"
+]
+
+var portfolioLink = [
+   "https://riwaazweddings.com",
+   "https://shivalaymandir.com",
+   "https://nubooks.io",
+   "https://m3mcommercial.co",
+   "https://pawanmehndi.in",
+   "https://thrilladvisor.co.in",
+   "https://reveuse.com"
+]
+
+var portfolio = [
+   "Riwaaz Weddings",
+   "Shiv Mandir Rotak",
+   "NuBooks",
+   "M3M",
+   "Pawan Mehandi",
+   "Thrill Advisor",
+   "Reveuse",
+]
 
 // getting Home page
 app.get("/", (req, res) => {
-   res.render("index");
+   res.render("index", { portfolio: portfolio, portfolioImage: portfolioImage, portfolioLink: portfolioLink });
 })
 
 app.post("/contact-us", (req, res) => {
