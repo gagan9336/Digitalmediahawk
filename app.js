@@ -54,17 +54,17 @@ var portfolioLink = [
    "https://shivalaymandir.com",
    "https://nubooks.io",
    "https://m3mcommercial.co",
-   "https://pawanmehndi.in",
+   "https://pawanmehandi.in",
    "https://thrilladvisor.co.in",
-   "https://reveuse.com"
+   "https://reveuse.one"
 ]
 
 var portfolio = [
    "Riwaaz Weddings",
-   "Shiv Mandir Rotak",
+   "Shiv Mandir Rohtak",
    "NuBooks",
    "M3M",
-   "Pawan Mehandi",
+   "Pawan Mehndi",
    "Thrill Advisor",
    "Reveuse",
 ]
