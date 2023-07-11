@@ -45,7 +45,6 @@ var portfolioImage = [
    "assets/images/logo-d-3.png",
    "assets/images/logo-d-4.png",
    "assets/images/logo-d-5.png",
-   "assets/images/logo-d-6.png",
    "assets/images/logo-d-7.png"
 ]
 
@@ -53,9 +52,8 @@ var portfolioLink = [
    "https://riwaazweddings.com",
    "https://shivalaymandir.com",
    "https://nubooks.io",
-   "https://m3mcommercial.co",
+   "https://propertygoals.in",
    "https://pawanmehandi.in",
-   "https://thrilladvisor.co.in",
    "https://reveuse.one"
 ]
 
@@ -63,9 +61,8 @@ var portfolio = [
    "Riwaaz Weddings",
    "Shiv Mandir Rohtak",
    "NuBooks",
-   "M3M",
+   "Property Goals",
    "Pawan Mehndi",
-   "Thrill Advisor",
    "Reveuse",
 ]
 
